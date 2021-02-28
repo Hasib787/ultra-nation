@@ -2,7 +2,6 @@ import React from 'react';
 import './Country.css';
 
 const Country = (props) => {
-    console.log(props.country)
     const { name, capital, flag } = props.country;
     return (
         <div className="country-info">
