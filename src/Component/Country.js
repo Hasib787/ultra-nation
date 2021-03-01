@@ -2,12 +2,15 @@ import React from 'react';
 import './Country.css';
 
 const Country = (props) => {
-    const { name, capital, flag } = props.country;
+    const { name, population, region, flag } = props.country;
+    const handleAddCountry = props.handleAddCountry;
     return (
         <div className="country-info">
+            <h4>Country: {name}</h4>
             <img src={flag} alt=""></img>
-            <h4>Country Name: {name}</h4>
-            <h5>Capital: {capital}</h5>  
+            <p>Population: {population}</p>
+            <p><small>Region: {region}</small></p>
+            <button onClick={() => handleAddCountry(props.country)}>Add Country</button>
         </div>
     );
 };

@@ -1,7 +1,10 @@
 .country-info{
-   
+   width:500px;
+   border: 2px solid green;
+   margin: .9em;
+   padding: .9em;
 }
 .country-info img{
-    height: 200px;
-    width: 300px;
+    height: 50px;
+    width: 70px;
 }
